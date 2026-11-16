@@ -1,0 +1,4 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tesla sign-in code</title>
+<style>body{font-family:sans-serif;font-size:22px;padding:24px;line-height:1.5}#c{word-break:break-all;background:#eee;padding:12px;border-radius:8px;font-family:monospace}button{font-size:22px;padding:12px 20px;margin-top:16px}</style></head>
+<body><h2>Almost done!</h2><p>Copy this code and paste it into Morgan's secure box:</p><div id="c"></div><button onclick="navigator.clipboard.writeText(document.getElementById('c').textContent);this.textContent='Copied!'">Copy code</button>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').textContent=p.get('code')||('No code found. '+(p.get('error_description')||p.get('error')||''));</script></body></html>
